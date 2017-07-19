@@ -1,3 +1,5 @@
 class Item < ApplicationRecord
-	belons_to :category
+	belogns_to :category
+	belogns_to :user
+
 end
