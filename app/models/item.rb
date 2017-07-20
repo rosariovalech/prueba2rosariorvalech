@@ -1,5 +1,4 @@
 class Item < ApplicationRecord
-	belogns_to :category
-	belogns_to :user
-
+	belongs_to :category
+	belongs_to :user
 end
