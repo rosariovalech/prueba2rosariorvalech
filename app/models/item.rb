@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
-	belongs_to :category
-	belongs_to :user
+	belongs_to :category 
+	belongs_to :user, optional: true
 
 	scope :size_x, ->(x) { where(size: x) }
 	scope :without_user, -> { where(user_id: nil) }
